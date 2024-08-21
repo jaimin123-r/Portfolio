@@ -1,5 +1,5 @@
 import React from 'react'
-import port from 'C:/Users/jaimi/Desktop/RJ/PORTFOLIO/public/portfo_img.jpg'
+import port from '../../public/portfo_img.jpg'
 import { SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
