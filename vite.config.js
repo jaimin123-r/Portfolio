@@ -7,7 +7,7 @@ export default defineConfig({
 })
 // vite.config.js
 
-export default {
+export {
   build: {
     rollupOptions: {
       external: ["C:/Users/jaimi/Desktop/RJ/PORTFOLIO/public/portfo_img.jpg"]
