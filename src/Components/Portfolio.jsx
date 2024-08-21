@@ -36,7 +36,7 @@ const projects = [
         title: 'Portfolio',
         description: 'You are seeing right now this project',
         languages: ['REACT','HTML', 'CSS','JAVASCRIPT'],
-        projectLink: '#',
+        projectLink: 'https://rjaiminportfolio.netlify.app/',
         codeLink: '#'
     },
     {
