@@ -12,7 +12,7 @@ const projects = [
         title: 'Netflix Clone',
         description: 'When i was in Atul Auto company then i completed.This is my first project.',
         languages: ['HTML', 'CSS','JAVASCRIPT','PHP','MYSQL'],
-        projectLink: '#',
+        projectLink: 'https://www.netflix.com/in/',
         codeLink: '#'
     },
     {
@@ -20,7 +20,7 @@ const projects = [
         title: 'Microsoft Clone',
         description: 'Microsoft.com clone.',
         languages: ['HTML', 'CSS'],
-        projectLink: '#',
+        projectLink: 'https://www.microsoft.com/en-in',
         codeLink: '#'
     },
     {
@@ -28,7 +28,7 @@ const projects = [
         title: 'Apple Clone',
         description: 'This is my designing project from infoLabz company',
         languages: ['HTML', 'CSS'],
-        projectLink: '#',
+        projectLink: 'https://www.apple.com/',
         codeLink: '#'
     },
     {
