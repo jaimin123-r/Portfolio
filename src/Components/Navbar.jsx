@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import port from 'C:/Users/jaimi/Desktop/RJ/PORTFOLIO/public/portfo_img.jpg'
+import port from '../../public/portfo_img.jpg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import {Link} from 'react-scroll'
