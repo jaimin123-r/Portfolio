@@ -21,7 +21,7 @@ function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <section className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-2xl font-semibold mb-4 text-blue-600 relative inline-block">About Me</h2>
-            <p className="mb-4">Hello! I'm a passionate BCA student at XYZ College of Technology, pursuing my Bachelor's degree in Computer Applications. I have a keen interest in web development and coding, and I love creating innovative solutions to real-world problems.</p>
+            <p className="mb-4">Hello! I'm a passionate BCA student at khyati school of computer application, pursuing my Bachelor's degree in Computer Applications. I have a keen interest in web development and coding, and I love creating innovative solutions to real-world problems.</p>
             <p className="mb-4">Email: jaiminrathod412@gmail.com</p>
             <a href="mailto:jaiminrathod412@gmail.com" className="inline-block px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:shadow-lg transition-shadow duration-300">Contact Me</a>
           </section>
