@@ -40,12 +40,12 @@ const projects = [
         codeLink: '#'
     },
     {
-        image: comingsoon,
-        title: 'Food & Food ',
-        description: 'Coming soon...',
+        image: 'Food_App.png',
+        title: 'Bite & Bun ',
+        description: 'This is Food delivery app like dominos website',
         languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
-        projectLink: '#',
-        codeLink: '#'
+        projectLink: 'https://biteandbun.netlify.app/',
+        codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
     },
     {
         image: comingsoon,
