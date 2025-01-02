@@ -8,16 +8,16 @@ const Footer = () => {
             <footer className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-5">
                 <div className="container mx-auto">
                     <div className="flex justify-center">
-                        <a href="https://instagram.com/__r.j__0011" target="_blank" className="relative inline-block px-2.5 py-2">
+                       <a href="https://www.instagram.com/jaimin_rathod_9534" target="_blank" className="relative inline-block px-2.5 py-2">
                         <SocialIcon icon={faInstagram} bg="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" />
                         </a>
-                        <a href="https://github.com/JaiminRathod" target="_blank" className="relative inline-block px-2.5 py-2">
+                        <a href="https://www.facebook.com/rathod.jaimin.792" target="_blank" className="relative inline-block px-2.5 py-2">
                         <SocialIcon icon={faFacebook} bg="bg-blue-600" />
                         </a>
-                        <a href="https://linkedin.com/in/jaimin-rathod-5632b21ba" target="_blank" className="relative inline-block px-2.5 py-2">
+                        <a href="https://github.com/jaimin123-r" target="_blank" className="relative inline-block px-2.5 py-2">
                         <SocialIcon icon={faGithub} bg="bg-gray-800" />
                         </a>
-                        <a href="https://www.facebook.com/jaimin.rathod" target="_blank" className="relative inline-block px-2.5 py-2">
+                        <a href="https://www.linkedin.com/in/rathod-jaimin-7972b1219/" target="_blank" className="relative inline-block px-2.5 py-2">
                         <SocialIcon icon={faLinkedin} bg="bg-blue-700"/>
                         </a>
                     </div> 
