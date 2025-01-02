@@ -8,7 +8,7 @@ const Footer = () => {
             <footer className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-5">
                 <div className="container mx-auto">
                     <div className="flex justify-center">
-                       <a href="https://www.instagram.com/jaimin_rathod_9534" target="_blank" className="relative inline-block px-2.5 py-2">
+                        <a href="https://www.instagram.com/jaimin_rathod_9534" target="_blank" className="relative inline-block px-2.5 py-2">
                         <SocialIcon icon={faInstagram} bg="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" />
                         </a>
                         <a href="https://www.facebook.com/rathod.jaimin.792" target="_blank" className="relative inline-block px-2.5 py-2">
