@@ -43,10 +43,10 @@ function Home() {
                 <div className='space-y-2'>
                     <h1 className='text-center'>Available on</h1>
                     <ul className='flex space-x-3'>
-                        <li><SocialIcon icon={faInstagram} bg="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" to /></li>
-                        <li><SocialIcon icon={faFacebook} bg="bg-blue-600"/></li>
-                        <li><SocialIcon icon={faGithub} bg="bg-gray-800"  /></li>
-                        <li><SocialIcon icon={faLinkedin} bg="bg-blue-700" /></li>
+                       <li><SocialIcon icon={faInstagram} bg="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" url="https://instagram.com/jaimin_rathod_9534" /></li>
+                  <li><SocialIcon icon={faFacebook} bg="bg-blue-600" url="https://www.facebook.com/rathod.jaimin.792" /></li>
+                  <li><SocialIcon icon={faGithub} bg="bg-gray-800" url="https://github.com/jaimin123-r" /></li>
+                  <li><SocialIcon icon={faLinkedin} bg="bg-blue-700" url="https://www.linkedin.com/in/rathod-jaimin-7972b1219/" /></li>
                     </ul>
                 </div>
                 {/* MERN ICONS */}
@@ -74,9 +74,14 @@ function Home() {
 
 function SocialIcon({ icon, bg }) {
     return (
-      <a href="https://instagram.com/__r.j__0011" className={`${bg} w-12 h-12 rounded-full flex items-center justify-center text-white hover:-translate-y-1 transition-transform duration-300`}>
-        <FontAwesomeIcon icon={icon} size="2x" />
-      </a>
+      <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${bg} w-12 h-12 rounded-full flex items-center justify-center text-white hover:-translate-y-1 transition-transform duration-300`}
+    >
+      <FontAwesomeIcon icon={icon} size="2x" />
+    </a>
     );
   }
 
