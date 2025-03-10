@@ -48,12 +48,12 @@ const projects = [
         codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
     },
     {
-        image: comingsoon,
-        title: 'Chat App',
-        description: 'Coming soon...',
-        languages: ['REACT', 'NODE','MONGODB'],
-        projectLink: '#',
-        codeLink: '#'
+        image: 'mili.png',
+        title: 'MILI ENTERPRISE',
+        description: 'Mili enterprise is fabrication work website it customizable website according to the client.',
+        languages: ['REACT', 'TAILWIND','NODE'],
+        projectLink: 'https://milienterprise.netlify.app',
+        codeLink: 'https://github.com/jaimin123-r/Mili_Enterprise'
     }
 ];
 
