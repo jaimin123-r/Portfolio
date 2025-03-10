@@ -7,6 +7,30 @@ import portfolio from '../../public/portfolio_web.png'
 import comingsoon from '../../public/comingsoon.jpeg'
 
 const projects = [
+     {
+        image: portfolio,
+        title: 'Portfolio',
+        description: 'You are seeing right now this project',
+        languages: ['REACT','HTML', 'CSS','JAVASCRIPT'],
+        projectLink: 'https://rjaiminportfolio.netlify.app/',
+        codeLink: '#'
+    },
+    {
+        image: 'Food_App.png',
+        title: 'Bite & Bun ',
+        description: 'This is Food delivery app like dominos website',
+        languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
+        projectLink: 'https://biteandbun.netlify.app/',
+        codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
+    },
+    {
+        image: 'mili.png',
+        title: 'MILI ENTERPRISE',
+        description: 'Mili enterprise is fabrication work website it customizable website according to the client.',
+        languages: ['REACT', 'TAILWIND','NODE'],
+        projectLink: 'https://milienterprise.netlify.app',
+        codeLink: 'https://github.com/jaimin123-r/Mili_Enterprise'
+    },
     {
         image: netflix,
         title: 'Netflix Clone',
@@ -31,30 +55,7 @@ const projects = [
         projectLink: 'https://www.apple.com/',
         codeLink: '#'
     },
-    {
-        image: portfolio,
-        title: 'Portfolio',
-        description: 'You are seeing right now this project',
-        languages: ['REACT','HTML', 'CSS','JAVASCRIPT'],
-        projectLink: 'https://rjaiminportfolio.netlify.app/',
-        codeLink: '#'
-    },
-    {
-        image: 'Food_App.png',
-        title: 'Bite & Bun ',
-        description: 'This is Food delivery app like dominos website',
-        languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
-        projectLink: 'https://biteandbun.netlify.app/',
-        codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
-    },
-    {
-        image: 'mili.png',
-        title: 'MILI ENTERPRISE',
-        description: 'Mili enterprise is fabrication work website it customizable website according to the client.',
-        languages: ['REACT', 'TAILWIND','NODE'],
-        projectLink: 'https://milienterprise.netlify.app',
-        codeLink: 'https://github.com/jaimin123-r/Mili_Enterprise'
-    }
+   
 ];
 
 const Portfolio = () => {
