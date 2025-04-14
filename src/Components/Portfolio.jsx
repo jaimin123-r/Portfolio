@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectCard from './Project_card'
-import apple from '../../public/apple.png'
-import microsoft from '../../public/microsoft.png'
-import netflix from '../../public/netflix.png'
+import biteandbun from "../../public/biteandbun.png"
 import portfolio from '../../public/portfolio_web.png'
 import comingsoon from '../../public/comingsoon.jpeg'
 import mili from '../../public/milienterprise.png'
+import towingsquad from "../../public/UseHomePage.png"
+import essence from "../../public/essence.png"
 
 const projects = [
     {
@@ -18,14 +18,14 @@ const projects = [
     },
     {
         image: portfolio,
-        title: 'Portfolio',
+        title: 'My Portfolio',
         description: 'You are seeing right now this project',
         languages: ['REACT','HTML', 'CSS','JAVASCRIPT'],
         projectLink: 'https://rjaiminportfolio.netlify.app/',
         codeLink: 'https://github.com/jaimin123-r/Portfolio'
     },  
     {
-        image: "../../public/biteandbun.png",
+        image: biteandbun,
         title: 'Bite & Bun',
         description: 'Developed a food delivery website inspired by McDonalds UI/UX. Features include menu display, add to cart, and a mobile-friendly navbar.I hosted this website on netlify.',
         languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
@@ -33,7 +33,7 @@ const projects = [
         codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
     },
     {
-        image: "../../public/UseHomePage.png",
+        image: towingsquad,
         title: 'Towing Squad',
         description: 'Towing Squad is my college last year project. Designed to manage and display vehicles towed from no-parking zones.In this project having admin panel, officer panel, traffic police panel and user dashboard.',
         languages: ['REACT','EXPRESS','NODE','MONGODB','TAILWIND CSS'],
@@ -41,7 +41,7 @@ const projects = [
         codeLink: 'https://github.com/jaimin123-r'
     },
     {
-        image: "../../public/essence.png",
+        image: essence,
         title: 'Essence Perfumes',
         description: 'Essence is my first project for my friend. I have done this project using HTML and CSS.I hosted this website on netlify.',
         languages: ['HTML','CSS'],
