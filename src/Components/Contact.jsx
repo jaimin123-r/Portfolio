@@ -17,7 +17,7 @@ function Contact() {
     <>
         <div name="Contact" className="container mx-auto px-4 py-10">
       {/* <h1 className="text-4xl font-bold text-center text-primary mb-10 opacity-0 -translate-y-5 animate-fadeInDown">Contact Us</h1> */}
-      <header className="bg-gradient-to-r from-purple-500 to-purple-800 text-white text-center py-10 mb-10 clip-polygon">
+      <header className="bg-gradient-to-r from-purple-500 to-purple-800 text-white text-center py-10 mb-10 clip-polygon w-full">
              <h1 className="text-4xl font-bold mb-2 animate-fadeInDown">Contact Us</h1>
             </header>
       <div className="flex flex-wrap gap-10">
@@ -25,11 +25,11 @@ function Contact() {
           <h2 className="text-2xl font-semibold text-primary mb-6">Contact Information</h2>
           <div className="mb-4 flex items-center">
             <span><FaHome size={24}/></span>
-            <span className='ml-3'>11,Shree Shyam Society, Bavla,Gujarat,</span>
+            <span className='ml-3'>11,Shree Shyam Society, Bavla, Gujarat, India.</span>
           </div>
           <div className="mb-4 flex items-center">
             <i><IoCall size={24}/></i>
-            <span className='ml-3'>91+ 1234567891</span>
+            <span className='ml-3'>+91 9574589604</span>
           </div>
           <div className="mb-4 flex items-center">
             <i><MdOutlineEmail size={24}/></i>

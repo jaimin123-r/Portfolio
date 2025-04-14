@@ -12,18 +12,6 @@ import { Toaster,toast } from 'react-hot-toast'
 // import Experience from './Components/Experience'
 
 export default function App() {
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element:<><Navbar title="Home"/><Home/></> 
-  //   },
-  //   {
-  //     path: "/Login-Signup",
-  //     element: <><Navbar/><AuthForm/></>
-  //   },
-  
-  // ]);
-
   useEffect(() => {
     // Show welcome toast on page reload
     toast('Welcome from Jaimin!', {
@@ -46,8 +34,6 @@ export default function App() {
       <Footer/>
       </div>
       <Toaster/>
-
-      {/* <RouterProvider router={router}/> */}
     </>
    
   )

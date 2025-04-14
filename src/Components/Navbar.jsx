@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import port from 'C:/Users/jaimi/Desktop/RJ/PORTFOLIO/public/portfo_img.jpg'
+import port from '../../public/portfo_img.jpg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import {Link} from 'react-scroll'
@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className='flex justify-between items-center h-16'>
             <div className='flex space-x-2 cursor-pointer'>
                 <img src={port} className='h-12 w-104 rounded-full' alt="" />
-                <h1 className='font-semibold text-xl cursor-pointer text-purple-700'>Jaimin<span className='text-orange-600 text-2xl hover:scale-200 duration-200 transition'>R</span>
+                <h1 className='font-semibold text-xl cursor-pointer text-purple-700'>Jaimin<span className='text-orange-600 text-2xl hover:scale-200 duration-200 transition'>R</span><span className='text-orange-600 text-xl hover:scale-200 duration-200 transition'>athod</span>
                 <p className='text-sm text-purple-700'>Web Developer</p>
                 </h1>
             </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
                     ))
                   }
                 </ul>
-                <button className='bg-purple-700 text-white rounded-md p-1.5 hidden md:block' onClick={btnClick}>Login/Signup</button>
+                {/* <button className='bg-purple-700 text-white rounded-md p-1.5 hidden md:block' onClick={btnClick}>Login/Signup</button> */}
                 <div onClick={()=> setMenu(!menu)} className='md:hidden cursor-pointer'>{!menu ? <GiHamburgerMenu size={24}/>: <MdClose size={24}/>}</div>
             </div>
         </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
                       </li>
                     ))
                   }
-                          <button className='bg-purple-700  text-white rounded-md p-1.5' onClick={btnClick}>Login/Signup</button>
+                          {/* <button className='bg-purple-700  text-white rounded-md p-1.5' onClick={btnClick}>Login/Signup</button> */}
                       </ul>
                     
               </div>
