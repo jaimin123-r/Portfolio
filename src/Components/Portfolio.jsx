@@ -8,54 +8,64 @@ import comingsoon from '../../public/comingsoon.jpeg'
 import mili from '../../public/milienterprise.png'
 
 const projects = [
-    {
-        image: netflix,
-        title: 'Netflix Clone',
-        description: 'When i was in Atul Auto company then i completed.This is my first project.',
-        languages: ['HTML', 'CSS','JAVASCRIPT','PHP','MYSQL'],
-        projectLink: '#',
-        codeLink: '#'
-    },
-    {
-        image: microsoft,
-        title: 'Microsoft Clone',
-        description: 'Microsoft.com clone.',
-        languages: ['HTML', 'CSS'],
-        projectLink: '#',
-        codeLink: '#'
-    },
-    {
-        image: apple,
-        title: 'Apple Clone',
-        description: 'This is my designing project from infoLabz company',
-        languages: ['HTML', 'CSS'],
-        projectLink: '#',
-        codeLink: '#'
-    },
-    {
+     {
         image: portfolio,
         title: 'Portfolio',
         description: 'You are seeing right now this project',
         languages: ['REACT','HTML', 'CSS','JAVASCRIPT'],
-        projectLink: '#',
+        projectLink: 'https://rjaiminportfolio.netlify.app/',
         codeLink: '#'
     },
     {
-        image: comingsoon,
-        title: 'Food & Food ',
-        description: 'Coming soon...',
+        image: 'Food_App.png',
+        title: 'Bite & Bun ',
+        description: 'This is Food delivery app like dominos website',
         languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
+        projectLink: 'https://biteandbun.netlify.app/',
+        codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
+    },
+    {
+        image: 'mili.png',
+        title: 'MILI ENTERPRISE',
+        description: 'Mili enterprise is fabrication work website it customizable website according to the client.',
+        languages: ['REACT', 'TAILWIND','NODE'],
+        projectLink: 'https://milienterprise.netlify.app',
+        codeLink: 'https://github.com/jaimin123-r/Mili_Enterprise'
+    },
+
+    {
+        image: "../../public/biteandbun.png",
+        title: 'Bite & Bun',
+        description: 'Developed a food delivery website inspired by McDonalds UI/UX. Features include menu display, add to cart, and a mobile-friendly navbar.I hosted this website on netlify.',
+        languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
+        projectLink: 'https://biteandbun.netlify.app/',
+        codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
+    },
+    {
+        image: "../../public/UseHomePage.png",
+        title: 'Towing Squad',
+        description: 'Towing Squad is my college last year project. Designed to manage and display vehicles towed from no-parking zones.In this project having admin panel, officer panel, traffic police panel and user dashboard.',
+        languages: ['REACT','EXPRESS','NODE','MONGODB','TAILWIND CSS'],
         projectLink: '#',
-        codeLink: '#'
+        codeLink: 'https://github.com/jaimin123-r'
+    },
+    {
+        image: "../../public/essence.png",
+        title: 'Essence Perfumes',
+        description: 'Essence is my first project for my friend. I have done this project using HTML and CSS.I hosted this website on netlify.',
+        languages: ['HTML','CSS'],
+        projectLink: 'https://itsessence.netlify.app',
+        codeLink: 'https://github.com/jaimin123-r'
     },
     {
         image: comingsoon,
-        title: 'Chat App',
-        description: 'Coming soon...',
-        languages: ['REACT', 'NODE','MONGODB'],
+        title: 'IOT Project',
+        description: 'This is IOT project from InfoLabz company (I done my intership there).',
+        languages: ['C++'],
         projectLink: '#',
         codeLink: '#'
     }
+   
 ];
 
 const Portfolio = () => {
