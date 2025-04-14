@@ -37,8 +37,8 @@ const projects = [
         title: 'Towing Squad',
         description: 'Towing Squad is my college last year project. Designed to manage and display vehicles towed from no-parking zones.In this project having admin panel, officer panel, traffic police panel and user dashboard.',
         languages: ['REACT','EXPRESS','NODE','MONGODB','TAILWIND CSS'],
-        projectLink: '#',
-        codeLink: 'https://github.com/jaimin123-r'
+        projectLink: 'https://codesandbox.io/p/sandbox/github/jaimin123-r/Towing_Squad',
+        codeLink: 'https://github.com/jaimin123-r/Towing_Squad'
     },
     {
         image: essence,
