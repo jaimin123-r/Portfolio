@@ -8,31 +8,22 @@ import comingsoon from '../../public/comingsoon.jpeg'
 import mili from '../../public/milienterprise.png'
 
 const projects = [
-     {
+    {
+        image: mili,
+        title: 'Milienterprise',
+        description: 'Milienterprise is a fabrication company providing services for different types of fabrication works.In this project i have used Hostinger for hosting.',
+        languages: ['HTML', 'CSS','JAVASCRIPT'],
+        projectLink: 'https://milienterprise.in/',
+        codeLink: 'https://github.com/jaimin123-r/Mili_Enterprise'
+    },
+    {
         image: portfolio,
         title: 'Portfolio',
         description: 'You are seeing right now this project',
         languages: ['REACT','HTML', 'CSS','JAVASCRIPT'],
         projectLink: 'https://rjaiminportfolio.netlify.app/',
-        codeLink: '#'
-    },
-    {
-        image: 'Food_App.png',
-        title: 'Bite & Bun ',
-        description: 'This is Food delivery app like dominos website',
-        languages: ['REACT', 'NODE','MONGODB','HTML', 'CSS','JAVASCRIPT'],
-        projectLink: 'https://biteandbun.netlify.app/',
-        codeLink: 'https://github.com/jaimin123-r/Bite_and_Bun'
-    },
-    {
-        image: 'mili.png',
-        title: 'MILI ENTERPRISE',
-        description: 'Mili enterprise is fabrication work website it customizable website according to the client.',
-        languages: ['REACT', 'TAILWIND','NODE'],
-        projectLink: 'https://milienterprise.netlify.app',
-        codeLink: 'https://github.com/jaimin123-r/Mili_Enterprise'
-    },
-
+        codeLink: 'https://github.com/jaimin123-r/Portfolio'
+    },  
     {
         image: "../../public/biteandbun.png",
         title: 'Bite & Bun',
@@ -64,8 +55,8 @@ const projects = [
         languages: ['C++'],
         projectLink: '#',
         codeLink: '#'
-    }
-   
+    },
+
 ];
 
 const Portfolio = () => {
