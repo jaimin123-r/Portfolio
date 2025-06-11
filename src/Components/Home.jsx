@@ -28,11 +28,7 @@ function Home() {
             </div>
             <br />
             <p className="md:text-md text-justify md:text-[17px]">
-              A highly motivated and driven fresher with a Bachelor's degree in Computer Applications (BCA) from Khyati Foundation,
-              seeking an opportunity to kickstart my career in the IT industry. Possess strong foundational knowledge in computer
-              programming, data structures, algorithms, and software development principles gained through academic projects and
-              coursework. Excellent problem-solving and analytical skills, with a keen interest in learning and adapting to new technologies. 
-              Committed to delivering high-quality work and contributing to the success of the organization.
+              I specialize in building responsive, scalable, and performance-driven web applications tailored to business goals. With a strong focus on user experience, clean code, and modern development practices, I help clients and companies turn ideas into impactful digital products. My goal is to deliver reliable, maintainable solutions that enhance engagement and drive results.
             </p>
             <br />
             {/* Social Media Icons */}

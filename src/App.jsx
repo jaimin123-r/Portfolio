@@ -14,7 +14,7 @@ import { Toaster,toast } from 'react-hot-toast'
 export default function App() {
   useEffect(() => {
     // Show welcome toast on page reload
-    toast('Welcome from Jaimin!', {
+    toast('Welcome !', {
       icon: '❤️',
       style: {
         borderRadius: '10px',
