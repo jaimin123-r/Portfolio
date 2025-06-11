@@ -1,48 +1,48 @@
 import axios from 'axios';
-import React, { useState }  from 'react'
+import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { FaHome } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 
-{/* https://app.getform.io/forms - for form data show
-    https://react-hot-toast.com/ - for notifications in website
-  */}
-  {/* What are the exceptional options to Tailwind CSS? 
-    Bootstrap, Bulma, Foundation, Materialize CSS, Semantic UI, UIkit, Tachyons,
-     Spectre CSS, Pure CSS, and Shoelace CSS */}
+/* 
+  https://app.getform.io/forms - for form data show
+  https://react-hot-toast.com/ - for notifications in website
+  
+  Alternative CSS frameworks to Tailwind CSS: 
+  Bootstrap, Bulma, Foundation, Materialize CSS, Semantic UI, UIkit, Tachyons,
+  Spectre CSS, Pure CSS, and Shoelace CSS 
+*/
 
 function Contact() {
   return (
     <>
-        <div name="Contact" className="container mx-auto px-4 py-10">
-      {/* <h1 className="text-4xl font-bold text-center text-primary mb-10 opacity-0 -translate-y-5 animate-fadeInDown">Contact Us</h1> */}
-      <header className="bg-gradient-to-r from-purple-500 to-purple-800 text-white text-center py-10 mb-10 clip-polygon w-full">
-             <h1 className="text-4xl font-bold mb-2 animate-fadeInDown">Contact Us</h1>
-            </header>
-      <div className="flex flex-wrap gap-10">
-        <div className="flex-1 min-w-[300px] bg-white p-8 rounded-lg shadow-md opacity-0 translate-y-5 animate-fadeInUp">
-          <h2 className="text-2xl font-semibold text-primary mb-6">Contact Information</h2>
-          <div className="mb-4 flex items-center">
-            <span><FaHome size={24}/></span>
-            <span className='ml-3'>11,Shree Shyam Society, Bavla, Gujarat, India.</span>
+      <div name="Contact" className="container mx-auto px-4 py-10">
+        <header className="bg-gradient-to-r from-purple-500 to-purple-800 text-white text-center py-10 mb-10 rounded-lg w-full">
+          <h1 className="text-4xl font-bold mb-2 animate-pulse">Contact Us</h1>
+        </header>
+        <div className="flex flex-wrap gap-10">
+          <div className="flex-1 min-w-[300px] bg-white p-8 rounded-lg shadow-md transform transition-all duration-500 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-purple-600 mb-6">Contact Information</h2>
+            <div className="mb-4 flex items-center">
+              <FaHome size={24} className="text-purple-500" />
+              <span className='ml-3 text-gray-700'>11, Shree Shyam Society, Bavla, Gujarat, India.</span>
+            </div>
+            <div className="mb-4 flex items-center">
+              <IoCall size={24} className="text-purple-500" />
+              <span className='ml-3 text-gray-700'>+91 9574589604</span>
+            </div>
+            <div className="mb-4 flex items-center">
+              <MdOutlineEmail size={24} className="text-purple-500" />
+              <span className='ml-3 text-gray-700'>jaiminconnect@gmail.com</span>
+            </div>
           </div>
-          <div className="mb-4 flex items-center">
-            <i><IoCall size={24}/></i>
-            <span className='ml-3'>+91 9574589604</span>
-          </div>
-          <div className="mb-4 flex items-center">
-            <i><MdOutlineEmail size={24}/></i>
-            <span className='ml-3'>jaiminrathod412@gmail.com</span>
-          </div>
+          <ContactForm />
         </div>
-        <ContactForm />
       </div>
-    </div>
     </>
-  )
+  );
 }
-
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -52,37 +52,41 @@ const ContactForm = () => {
     message: '',
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormData({ name: '', email: '', phone: '', message: '' });
-       const userInfo = {
+    setIsLoading(true);
+
+    const userInfo = {
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
       message: formData.message
+    };
+
+    try {
+      await axios.post("https://getform.io/f/bgdyqmva", userInfo);
+      toast.success("Your message has been sent successfully!");
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      toast.error("Something went wrong. Please try again.");
+      console.error("Form submission error:", error);
+    } finally {
+      setIsLoading(false);
     }
-    try{
-      await axios.post("https://getform.io/f/bgdyqmva",userInfo);
-      toast.success("Your Massage has been sent")
-    }catch(error){
-      toast.error("Something went wrong")
-      console.log(error);
-    }
- 
-    console.log('Form submitted:', formData);
-    // alert('Thank you for your message. We will get back to you soon!');
   };
 
   return (
-    <div className="flex-1 min-w-[300px] bg-white p-8 rounded-lg shadow-md opacity-0 translate-y-5 animate-fadeInUp" style={{ animationDelay: '0.7s' }}>
-      <h2 className="text-2xl font-semibold text-primary mb-6">Send Us a Message</h2>
+    <div className="flex-1 min-w-[300px] bg-white p-8 rounded-lg shadow-md transform transition-all duration-500 hover:scale-105">
+      <h2 className="text-2xl font-semibold text-purple-600 mb-6">Send Us a Message</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-5">
-          <label htmlFor="name" className="block mb-1 text-secondary">Name</label>
+          <label htmlFor="name" className="block mb-1 text-gray-600 font-medium">Name</label>
           <input
             type="text"
             id="name"
@@ -90,11 +94,12 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-0 py-2 border-b-2 border-secondary bg-transparent focus:outline-none focus:border-primary transition-colors"
+            disabled={isLoading}
+            className="w-full px-0 py-2 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-purple-500 transition-colors disabled:opacity-50"
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="email" className="block mb-1 text-secondary">Email</label>
+          <label htmlFor="email" className="block mb-1 text-gray-600 font-medium">Email</label>
           <input
             type="email"
             id="email"
@@ -102,11 +107,12 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-0 py-2 border-b-2 border-secondary bg-transparent focus:outline-none focus:border-primary transition-colors"
+            disabled={isLoading}
+            className="w-full px-0 py-2 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-purple-500 transition-colors disabled:opacity-50"
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="phone" className="block mb-1 text-secondary">Phone</label>
+          <label htmlFor="phone" className="block mb-1 text-gray-600 font-medium">Phone</label>
           <input
             type="tel"
             id="phone"
@@ -114,33 +120,49 @@ const ContactForm = () => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="w-full px-0 py-2 border-b-2 border-secondary bg-transparent focus:outline-none focus:border-primary transition-colors"
+            disabled={isLoading}
+            className="w-full px-0 py-2 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-purple-500 transition-colors disabled:opacity-50"
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="message" className="block mb-1 text-secondary">Message</label>
+          <label htmlFor="message" className="block mb-1 text-gray-600 font-medium">Message</label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full px-0 py-2 border-b-2 border-secondary bg-transparent focus:outline-none focus:border-primary transition-colors h-24 resize-y"
-          ></textarea>
+            disabled={isLoading}
+            rows={4}
+            className="w-full px-0 py-2 border-b-2 border-gray-300 bg-transparent focus:outline-none focus:border-purple-500 transition-colors resize-y disabled:opacity-50"
+          />
         </div>
         <button
           type="submit"
-          className="bg-primary text-white px-5 py-3 rounded-md hover:bg-secondary transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group"
+          disabled={isLoading}
+          className="bg-purple-600 text-white px-6 py-3 rounded-md hover:bg-purple-700 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
         >
-          Send Message
-          <span className="absolute inset-0 h-full w-full bg-white/20 scale-0 rounded-full transition-transform duration-500 ease-out group-hover:scale-100"></span>
+          {isLoading ? (
+            <span className="flex items-center">
+              <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              </svg>
+              Sending...
+            </span>
+          ) : (
+            <>
+              Send Message
+              <span className="absolute inset-0 h-full w-full bg-white/20 scale-0 rounded-full transition-transform duration-500 ease-out group-hover:scale-100"></span>
+            </>
+          )}
         </button>
       </form>
     </div>
   );
 };
 
-export default Contact
+export default Contact;
 
 
 
