@@ -19,14 +19,6 @@ const projects = [
     codeLink: "https://github.com/jaimin123-r/Mili_Enterprise",
   },
   {
-    image: portfolio,
-    title: "My Portfolio",
-    description: "You are seeing right now this project",
-    languages: ["REACT", "HTML", "CSS", "JAVASCRIPT"],
-    projectLink: "https://rjaiminportfolio.netlify.app/",
-    codeLink: "https://github.com/jaimin123-r/Portfolio",
-  },
-  {
     image: biteandbun,
     title: "Bite & Bun",
     description:
@@ -63,6 +55,15 @@ const projects = [
     codeLink: "https://github.com/jaimin123-r/Essence_Perfume",
   },
   {
+     image: chatty,
+    title: "Chatty App",
+    description:
+      "I developed a real-time chat application using React, Express, Node.js, MongoDB, and Socket.IO for seamless bi-directional communication. The UI is built with Tailwind CSS and DaisyUI, ensuring a modern, responsive design. The app supports live messaging, user authentication, and persistent chat history. It’s optimized for performance and scalable for future enhancements.",
+    languages: ["REACT", "EXPRESS", "NODE", "MONGODB", "TAILWIND CSS","SOCKET.IO","DAISYUI"],
+    projectLink: "#",
+    codeLink: "https://github.com/jaimin123-r",
+  },
+  {
     image: comingsoon,
     title: "Smart Shopping Cart (IoT Project)",
     description:
@@ -70,6 +71,14 @@ const projects = [
     languages: ["C++"],
     projectLink: "#",
     codeLink: "https://docs.google.com/document/d/10D4o9_0oIPWj-Lq4NPf7yVuzYWyHp2xsOE2zmzAhGu0/edit?pli=1&tab=t.0",
+  },
+   {
+    image: portfolio,
+    title: "My Portfolio",
+    description: "In this portfolio i used third party form for contact form and Inquiry form and hosted this website on netlify.",
+    languages: ["REACT", "HTML", "CSS", "JAVASCRIPT"],
+    projectLink: "https://rjaiminportfolio.netlify.app/",
+    codeLink: "https://github.com/jaimin123-r/Portfolio",
   },
 ];
 

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FiPhone, FiMail, FiUser, FiMessageSquare, FiX } from 'react-icons/fi';
 import { FaRupeeSign } from "react-icons/fa";
+import axios from 'axios';
+import  toast  from 'react-hot-toast';
 
 const ContactForm = ({ setShowLogin }) => {
   const [formData, setFormData] = useState({
@@ -17,15 +19,22 @@ const ContactForm = ({ setShowLogin }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Contact Form Submitted:', formData);
-      alert('Thank you for your inquiry! I\'ll get back to you soon.');
-      setFormData({
+
+    const Info = {
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      requirement: formData.requirement,
+      budget: formData.budget,
+    };
+
+      try {
+      await axios.post("https://getform.io/f/aqomqqqa", Info);
+      toast.success("Your message has been sent successfully!");
+       setFormData({
         fullName: '',
         email: '',
         phone: '',
@@ -34,7 +43,10 @@ const ContactForm = ({ setShowLogin }) => {
       });
       setIsSubmitting(false);
       setShowLogin(false);
-    }, 1500);
+    } catch (error) {
+      toast.error("Something went wrong. Please try again.");
+      console.error("Form submission error:", error);
+    }
   };
 
   const budgetOptions = [
